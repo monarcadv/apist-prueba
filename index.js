@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express();
-// 
+const cors = require('cors') 
+
+app.use(cors())
 const raute = require('./datauser/user.js')
 app.use('/api/use',raute)
 // 
